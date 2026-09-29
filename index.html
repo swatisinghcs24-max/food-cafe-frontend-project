@@ -1,0 +1,397 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Cafe - Food Ordering</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            ☕ Foodie Cafe
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home / Banner -->
+    <section id="home" class="hero">
+
+        <img src="cafe.jpg" alt="Foodie Cafe">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Foodie Cafe</h1>
+
+            <p>
+                Fresh Food • Great Taste • Happy Moments
+            </p>
+
+            <a href="#menu" class="button">
+                Explore Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Introduction -->
+    <section class="intro">
+
+        <h2>Delicious Food, Made With Love ❤️</h2>
+
+        <p>
+            Enjoy delicious food and refreshing drinks
+            prepared specially for you.
+        </p>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section id="menu">
+
+        <h2 class="section-title">
+            Our Popular Menu
+        </h2>
+
+        <div class="menu-container">
+
+            <!-- Burger -->
+            <div class="food-card">
+
+                <img src="burger.jpg" alt="Burger">
+
+                <h3>🍔 Cheese Burger</h3>
+
+                <p>
+                    Crispy, cheesy and delicious burger.
+                </p>
+
+                <h4>₹120</h4>
+
+                <a href="#order" class="order-button">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Pizza -->
+            <div class="food-card">
+
+                <img src="pizza.jpg" alt="Pizza">
+
+                <h3>🍕 Cheese Pizza</h3>
+
+                <p>
+                    Hot pizza loaded with delicious cheese.
+                </p>
+
+                <h4>₹180</h4>
+
+                <a href="#order" class="order-button">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Pasta -->
+            <div class="food-card">
+
+                <img src="pasta.jpg" alt="Pasta">
+
+                <h3>🍝 White Sauce Pasta</h3>
+
+                <p>
+                    Creamy and tasty Italian-style pasta.
+                </p>
+
+                <h4>₹150</h4>
+
+                <a href="#order" class="order-button">
+                    Order Now
+                </a>
+
+            </div>
+
+
+            <!-- Coffee -->
+            <div class="food-card">
+
+                <img src="coffee.jpg" alt="Coffee">
+
+                <h3>☕ Cappuccino</h3>
+
+                <p>
+                    Fresh and hot coffee for a perfect day.
+                </p>
+
+                <h4>₹90</h4>
+
+                <a href="#order" class="order-button">
+                    Order Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Image Mapping -->
+    <section class="image-map-section">
+
+        <h2 class="section-title">
+            Explore Our Special Food
+        </h2>
+
+        <p>
+            Click on different areas of the image to explore food.
+        </p>
+
+        <img src="food map.jpg"
+             alt="Food Map"
+             usemap="#foodmap"
+             class="food-map">
+
+        <map name="foodmap">
+
+            <!-- Burger Area -->
+            <area shape="rect"
+                  coords="0,0,250,200"
+                  href="#menu"
+                  alt="Burger">
+
+            <!-- Coffee Area -->
+            <area shape="circle"
+                  coords="400,100,70"
+                  href="#menu"
+                  alt="Coffee">
+
+            <!-- Pizza Area -->
+            <area shape="rect"
+                  coords="250,0,500,200"
+                  href="#menu"
+                  alt="Pizza">
+
+        </map>
+
+        <div class="map-info">
+
+            <p>🟧 Rectangle → Burger / Pizza</p>
+
+            <p>🔵 Circle → Coffee</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+
+        <h2 class="section-title">
+            Place Your Order
+        </h2>
+
+        <form>
+
+            <label>Name</label>
+
+            <input type="text"
+                   placeholder="Enter your name"
+                   required>
+
+
+            <label>Email</label>
+
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+
+            <label>Select Food</label>
+
+            <select required>
+
+                <option value="">
+                    Select Food
+                </option>
+
+                <option>
+                    Cheese Burger - ₹120
+                </option>
+
+                <option>
+                    Cheese Pizza - ₹180
+                </option>
+
+                <option>
+                    White Sauce Pasta - ₹150
+                </option>
+
+                <option>
+                    Cappuccino - ₹90
+                </option>
+
+            </select>
+
+
+            <label>Quantity</label>
+
+            <input type="number"
+                   min="1"
+                   value="1"
+                   required>
+
+
+            <label>Address</label>
+
+            <textarea
+                placeholder="Enter your delivery address"
+                rows="4"></textarea>
+
+
+            <button type="submit">
+                Place Order 🍴
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Login Section -->
+    <section class="login-section">
+
+        <h2 class="section-title">
+            Customer Login
+        </h2>
+
+        <form>
+
+            <label>Username</label>
+
+            <input type="text"
+                   placeholder="Enter username"
+                   required>
+
+
+            <label>Password</label>
+
+            <input type="password"
+                   placeholder="Enter password"
+                   required>
+
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- HIT COUNTER -->
+    <section class="hit-counter-section">
+
+        <h2 class="section-title">
+            Website Hit Counter
+        </h2>
+
+        <p>
+            👥 Total Website Visits:
+            <strong id="hitCount">0</strong>
+        </p>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2 class="section-title">
+            About Foodie Cafe
+        </h2>
+
+        <p>
+            Foodie Cafe is a simple and friendly cafe where
+            you can enjoy fresh food, tasty drinks and
+            wonderful moments with your friends and family.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+        <p>📍 Jabalpur, Madhya Pradesh</p>
+
+        <p>📞 +91 98765 43210</p>
+
+        <p>📧 foodie@gmail.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Foodie Cafe | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- HIT COUNTER JAVASCRIPT -->
+    <script>
+
+        // Get previous hit count
+        let hits = localStorage.getItem("foodieCafeHits");
+
+        // Increase hit count
+        if (hits) {
+            hits = parseInt(hits) + 1;
+        } else {
+            hits = 1;
+        }
+
+        // Save hit count
+        localStorage.setItem("foodieCafeHits", hits);
+
+        // Display hit count
+        document.getElementById("hitCount").textContent = hits;
+
+    </script>
+
+</body>
+
+</html>
+```
